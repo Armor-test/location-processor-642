@@ -1,0 +1,41 @@
+# CODEOWNERS file for location-processor-642
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-api @Armor-test/dept-logging @Armor-test/dept-api
+
+# Directory ownership
+/middleware/ @Armor-test/team-core @Armor-test/dept-logging
+/shared/ @Armor-test/grp-payments @Armor-test/dept-data
+/static/ @Armor-test/unit-governance @Armor-test/team-security @Armor-test/grp-integration
+/ui/ @Armor-test/unit-governance @Armor-test/grp-integration @Armor-test/team-governance
+/pkg/ @Armor-test/squad-reporting @Armor-test/squad-database @Armor-test/grp-payments
+/modules/ @Armor-test/squad-performance @Armor-test/unit-cloud
+/deploy/ @Armor-test/squad-database @Armor-test/squad-reporting @Armor-test/squad-frontend
+/third_party/ @Armor-test/team-reporting @Armor-test/grp-integration @Armor-test/grp-api
+/lib/ @Armor-test/squad-mobile @Armor-test/unit-design @Armor-test/grp-payments
+/api/ @Armor-test/dept-api @Armor-test/dept-billing @Armor-test/squad-mobile
+/core/ @Armor-test/team-research @Armor-test/squad-product
+/docs/ @Armor-test/dept-api @Armor-test/grp-storage
+/components/ @Armor-test/dept-security @Armor-test/squad-api @Armor-test/team-security
+/internal/ @Armor-test/grp-payments @Armor-test/grp-ui
+
+# File type ownership
+*.scala @Armor-test/unit-test @Armor-test/squad-apps
+*.jsx @Armor-test/grp-ui @Armor-test/grp-payments @Armor-test/dept-data
+*.toml @Armor-test/unit-test @Armor-test/squad-cloud @Armor-test/dept-notifications
+*.rs @Armor-test/squad-apps @Armor-test/grp-storage
+*.ts @Armor-test/dept-release @Armor-test/grp-ui @Armor-test/grp-integration
+*.js @Armor-test/grp-search @Armor-test/team-frontend @Armor-test/dept-release
+*.properties @Armor-test/team-security @Armor-test/squad-performance
+*.java @Armor-test/squad-frontend @Armor-test/squad-mobile @Armor-test/squad-reporting
+*.cpp @Armor-test/squad-reporting @Armor-test/dept-identity @Armor-test/dept-billing
+*.md @Armor-test/squad-api @Armor-test/dept-identity @Armor-test/dept-security
+*.py @Armor-test/unit-test @Armor-test/squad-research
+*.xml @Armor-test/squad-cache @Armor-test/squad-performance @Armor-test/squad-apps
+*.h @Armor-test/dept-automation @Armor-test/unit-devops @Armor-test/team-governance
+*.tf @Armor-test/dept-automation @Armor-test/dept-reliability
+
+# Security and special files
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+Dockerfile @Armor-test/devops @Armor-test/infra
+package.json @Armor-test/dependency-team @Armor-test/security
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
